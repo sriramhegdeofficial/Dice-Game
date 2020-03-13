@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:100,400,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-pink-color: #F25790;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.1)), url("./../assets/abstract-ancient-antique-art-235985.jpg");
+     background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Roboto Slab', serif;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.game-container {
+    width: 750px;
+    height: 450px;
+    background: white;
+    box-shadow: 0px 0px 25px -5px black;
+    display: flex;
+    position: relative;
+    
+}
+
+.new-game {
+    text-transform: uppercase;
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: black;
+    font-weight: 900;
+    text-decoration: none;
+    font-size: 0.8rem;
+}
+
+.roll-dice {
+    position: absolute;
+    top: 300px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: 900;
+    text-decoration: none;
+    font-size: 0.8rem;
+    color: black;
+    border: 2px solid var(--main-pink-color);
+    padding: 5px 10px;
+    text-transform: capitalize;
+}
+
+.hold {
+    position: absolute;
+    top: 350px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: 900;
+    text-decoration: none;
+    font-size: 0.8rem;
+    color: black;
+    border: 2px solid var(--main-pink-color);
+    padding: 5px 10px;
+    text-transform: capitalize;
+}
+
+.plus-symbol {
+    width: 19px;
+    height: 19px;
+    transform: translate(-2px, 5px);
+
+}
+
+.player-section {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 70px;
+}
+
+.player1-section {
+    background: #F2F2F2;
+}
+
+.player-name {
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 100;
+}
+
+.score {
+    font-size: 4.2rem;
+    font-weight: bold;
+    margin-top: 50px;
+    color: var(--main-pink-color);
+}
+
+.player2-section {
+    background: #DEE8E9;
+
+}
+
+.current-score {
+    background: var(--main-pink-color);
+    margin-top: 40px;
+    padding: 10px 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.current-score span {
+    margin-top: 10px;
+    font-weight: 900;
+    font-size: 1.7rem;
+    text-transform: uppercase;
+}

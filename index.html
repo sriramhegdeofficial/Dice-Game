@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice Game </title>
+    <link rel="stylesheet" href="./styles/main.css">
+</head>
+<body>
+    <main>
+        <div class="game-container">
+            <a href="#" class="new-game">
+                <span>
+                    <img src="./assets/plus.svg" alt="new game icon" class="plus-symbol">
+                </span>
+                new game
+                
+            </a>
+            <a href="#" class="roll-dice" id="roll-dice">
+               
+                roll dice
+                
+            </a>
+            <a href="#" class="hold">
+               
+                hold
+                
+            </a>
+                
+            <div class="player-section player1-section">
+                <p class="player-name">player1</p>
+                <p class="score" id="score-0">0</p>
+                <div class="current-score">
+                    <span>current</span>
+                    <span id="player1-current-score">0</span>
+                </div>
+            </div>
+            <div class="player-section player2-section">
+                <p class="player-name">player2</p>
+                <p class="score" id="score-1">0</p>
+                <div class="current-score">
+                    <span>current</span>
+                    <span id="player2-current-score">0</span>
+                </div>
+            </div>
+
+        </div>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
