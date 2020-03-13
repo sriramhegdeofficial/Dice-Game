@@ -8,6 +8,7 @@
 
 :root {
     --main-pink-color: #F25790;
+    --status: #1FFF00;
 }
 
 html, body {
@@ -132,4 +133,20 @@ main {
     font-weight: 900;
     font-size: 1.7rem;
     text-transform: uppercase;
+}
+
+.current-status-0 {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background : var(--status);
+    visibility: hidden;
+}
+
+.current-status-1 {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background : var(--status);
+    visibility: hidden;
 }
