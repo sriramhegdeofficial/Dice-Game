@@ -40,7 +40,7 @@ var game = function() {
 
    document.querySelector('#hold').addEventListener('click', function(){
     playerScore[currentPlayer] += currentSum;
-    if(playerScore[currentPlayer] >= 10) {
+    if(playerScore[currentPlayer] >= 100) {
         resetGame();
         return ;
     }
@@ -96,12 +96,18 @@ var resetGame = function() {
 
       document.querySelector('#score-0').textContent = 0; 
       document.querySelector('#score-1').textContent = 0;
+
+      document.querySelector('.dice').src = "./assets/dice-1.svg";
 }
 
 
 
 var getRandomNumber = function() {
-    return Math.floor(Math.random() * 6) + 1 ;
+    
+    var diceValue = Math.floor(Math.random() * 6) + 1 ;
+    document.querySelector('.dice').src = "./assets/dice-" + diceValue + ".svg";
+
+    return diceValue;
 
 }
 

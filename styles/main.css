@@ -150,3 +150,13 @@ main {
     background : var(--status);
     visibility: hidden;
 }
+
+.dice {
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    left: 50%;
+    top: 150px;
+    transform: translateX(-50%);
+   
+}
